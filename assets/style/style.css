@@ -1,0 +1,144 @@
+@import "./fonts.css";
+
+
+:root {
+    --main-color: ;
+    --color-success: ;
+    --color-warn: ;
+    --color-danger: ;
+}
+
+/* BASE CONFIG */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+button {
+    background: none;
+    border: none;
+}
+
+/* BASE CONFIG */
+/* UNIQUE */
+
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.img {
+    padding: 20px 0;
+    background: url(https://ashkom.ru/wp-content/uploads/2019/12/vulkanizatsiya_4.jpg) no-repeat center/cover;
+    height: 100vh;
+    width: 100%;
+}
+footer{
+    height: 70px;
+    background: gray;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+/* UNIQUE */
+
+/* HERO */
+.hero__title {
+    font-size: 48px;
+    font-weight: 700;
+
+    color: rgba(0, 0, 0, 0.647);
+}
+
+.hero__title:hover {
+    color: black;
+    transition: .2s;
+}
+
+.hero__info {
+    align-items: flex-end;
+    font-size: 80px;
+    font-weight: 700;
+    opacity: 0;
+    transform: translatex(-80px);
+
+    color: coral;
+
+}
+
+.hero__info:hover {
+    transform: translateX(90px);
+    transition: 2s;
+    opacity: 1;
+}
+
+.hero__desc {
+
+    flex-direction: column;
+    align-items: center;
+
+}
+
+/* HERO */
+/* CARDS */
+.cards__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 5px;
+    row-gap: 5px;
+    padding: 30px 10px;
+
+}
+
+.cards__card {
+    height: 320px;
+    background: blue;
+
+}
+
+
+
+.cards__card {
+    background: url(https://cdn-icons-png.flaticon.com/512/75/75660.png) no-repeat center/cover;
+
+}
+
+
+.cards__card:hover {
+
+    transition: 6s;
+    transform: rotate(10020deg);
+
+
+}
+.cards__card img{
+    width: 100%;
+    height: 100%;
+}
+
+/* CARDS */
